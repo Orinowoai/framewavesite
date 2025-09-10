@@ -7,9 +7,8 @@ export default function Header() {
 				<Link href="/" className="font-bold tracking-tight">Framewave Studio</Link>
 				<nav className="flex gap-5 text-sm">
 					<Link href="/">Home</Link>
-					<Link href="/work">Work</Link>
-					<Link href="/services">Services</Link>
-					<Link href="/about">About</Link>
+					<Link href="/catalog">Catalog</Link>
+					<Link href="/press">Press</Link>
 					<Link href="/contact" className="rounded px-3 py-1 bg-[#22D3EE] text-black font-semibold">Contact</Link>
 				</nav>
 			</div>

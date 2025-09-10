@@ -1,3 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0B0F14"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g transform="translate(80,120)">
+    <text x="0" y="0" fill="#22D3EE" font-size="22" font-family="Inter, Arial,sans-serif" letter-spacing="3" opacity="0.9">FRAMEWAVE STUDIO</text>
+    <text x="0" y="80" fill="#F8FAFC" font-size="72" font-family="Inter, Arial,sans-serif" font-weight="800">Cinematic stories</text>
+    <text x="0" y="150" fill="#F8FAFC" font-size="72" font-family="Inter, Arial,sans-serif" font-weight="800">for the mobile era.</text>
+    <text x="0" y="230" fill="#E5E7EB" font-size="28" font-family="Inter, Arial,sans-serif" opacity="0.8">Weekly drops, bold worlds—human direction + generative tools.</text>
+  </g>
+</svg>
+
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="1200" height="630" fill="#0B0F14"/>
   <rect x="0" y="0" width="1200" height="120" fill="#111827"/>

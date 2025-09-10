@@ -14,3 +14,35 @@ body {
   color: #F8FAFC;
   background: radial-gradient(1200px 600px at 20% -10%, #111827 0%, #0B0F14 60%); 
 }
+
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    transition: all 150ms;
+    outline: none;
+  }
+  .btn-primary {
+    background-color: #22D3EE;
+    color: #000;
+  }
+  .btn-secondary {
+    border-width: 1px;
+    border-color: rgba(255,255,255,0.2);
+    color: #fff;
+  }
+}
+
+@layer utilities {
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+  }
+}
