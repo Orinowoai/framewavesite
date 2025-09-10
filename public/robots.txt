@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://framewave.studio
+
+# Sitemaps
+Sitemap: https://framewave.studio/sitemap.xml

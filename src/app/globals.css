@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { 
+  color-scheme: dark; 
+}
+* { 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+}
+body { 
+  background-color: #0B0F14;
+  color: #F8FAFC;
+  background: radial-gradient(1200px 600px at 20% -10%, #111827 0%, #0B0F14 60%); 
+}
