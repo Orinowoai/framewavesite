@@ -1,16 +1,4 @@
-DNS Configuration for framewave.studio
-
-Add these DNS records in GoDaddy DNS management:
-
-1. A record for @ (root) → 76.76.21.21
-2. CNAME for www → cname.vercel-dns.com
-
-Current nameservers need to be changed to:
-- ns1.vercel-dns.com
-- ns2.vercel-dns.com
-
-OR alternatively, just add the A and CNAME records above without changing nameservers.
-
-After adding records, wait a few minutes for propagation, then run:
-vercel domains verify framewave.studio
+1) A record: Host @ → Value 76.76.21.21 (TTL: default)
+2) CNAME: Host www → Value cname.vercel-dns.com (TTL: default)
+3) TXT: (none requested by Vercel at this time)
 

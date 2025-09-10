@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.framewave.studio" }],
+      "destination": "https://framewave.studio/$1",
+      "permanent": true
+    }
+  ]
+}
