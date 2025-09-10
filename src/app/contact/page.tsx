@@ -1,34 +1,24 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Contact",
-  description: "Press, partnerships, and general inquiries.",
-  openGraph: {
-    title: "Contact — Framewave Studio",
-    description: "Press, partnerships, and general inquiries.",
-    images: ["/og.png"],
-  },
-};
-
 export default function ContactPage() {
   return (
-    <div className="container py-16">
-      <h1 className="text-3xl md:text-4xl font-black">Contact</h1>
-      <p className="text-white/70 mt-2">
-        Press & partnerships: <a href="mailto:info@framewave.studio" className="underline">info@framewave.studio</a>
+    <main className="max-w-3xl mx-auto px-4 py-16">
+      <h1 className="text-3xl font-semibold mb-4">Let&apos;s create something cinematic</h1>
+      <p className="opacity-80 mb-6">
+        Tell us about your project and goals. We&apos;ll reply within 24 hours.
       </p>
       <form
-        action="https://formspree.io/f/your-id"
-        method="POST"
-        className="mt-8 max-w-xl space-y-4"
-        aria-label="Contact form"
+        action="mailto:info@framewave.studio"
+        method="post"
+        encType="text/plain"
+        className="grid gap-4"
       >
-        {/* TODO: Replace with first-party endpoint when ready */}
-        <input className="w-full rounded border border-white/10 bg-white/[0.02] p-3" name="name" placeholder="Name" required />
-        <input className="w-full rounded border border-white/10 bg-white/[0.02] p-3" name="email" type="email" placeholder="Email" required />
-        <textarea className="w-full rounded border border-white/10 bg-white/[0.02] p-3" name="message" placeholder="Your message" rows={6} required />
-        <button className="btn-primary" type="submit">Send</button>
+        <input required name="name" placeholder="Your name" className="border rounded px-3 py-2" />
+        <input required type="email" name="email" placeholder="Your email" className="border rounded px-3 py-2" />
+        <textarea required name="message" placeholder="Project brief" rows={6} className="border rounded px-3 py-2" />
+        <button className="bg-cyan-400 text-black font-semibold px-4 py-2 rounded">Send</button>
       </form>
-    </div>
+      <p className="mt-6 text-sm opacity-70">
+        Prefer email? <a className="underline" href="mailto:info@framewave.studio">info@framewave.studio</a>
+      </p>
+    </main>
   );
 }

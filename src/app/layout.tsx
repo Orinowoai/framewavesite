@@ -3,26 +3,28 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Analytics from "@/components/Analytics";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://framewave.studio"),
   title: {
-    default: "Framewave Studio — Cinematic stories for the mobile era.",
+    default: "Framewave Studio",
     template: "%s | Framewave Studio",
   },
   description:
-    "Weekly drops, bold worlds, direct-to-fan. Human direction + generative tools—crafted for the scroll.",
+    "Cinematic stories for the mobile era — commercials, animation explainers, brand films, and high-impact social ads.",
   openGraph: {
     title: "Framewave Studio",
     description:
-      "AI-powered animation & micro-drama built for phones. Weekly drops, bold stories.",
+      "Cinematic commercials, high-end animation, brand films, and short-form social ads.",
     url: "https://framewave.studio",
     siteName: "Framewave Studio",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
+    locale: "en_GB",
     type: "website",
   },
   twitter: { card: "summary_large_image" },
@@ -53,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <Analytics />
+        <VercelAnalytics />
         <SpeedInsights />
       </body>
     </html>

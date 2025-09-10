@@ -1,30 +1,30 @@
 import Link from "next/link";
-import { ChevronRightIcon, PlayIcon, CheckIcon, StarIcon } from "@heroicons/react/24/solid";
+import { ChevronRightIcon, CheckIcon, StarIcon } from "@heroicons/react/24/solid";
 
 export default function LandingPage() {
   const features = [
     {
       icon: "🎬",
-      title: "Micro-Drama Series",
-      description: "30-120 second cinematic stories engineered for vertical screens and social feeds.",
-      benefit: "Higher engagement rates"
+      title: "Cinematic Commercials for Brands",
+      description: "Story-driven spots that convert viewers into customers with compelling narratives.",
+      benefit: "Higher conversion rates"
     },
     {
-      icon: "🚀",
-      title: "AI-Powered Production",
-      description: "Human direction meets generative tools for faster, bolder creative output.",
-      benefit: "10x faster production"
+      icon: "🎨",
+      title: "High-End Animation & Explainers",
+      description: "Complex concepts made clear with motion graphics and professional animation.",
+      benefit: "Clear communication"
     },
     {
-      icon: "👥",
-      title: "Direct-to-Fan Platform",
-      description: "Membership tiers, exclusive drops, and community-driven content decisions.",
-      benefit: "Sustainable revenue"
+      icon: "🏢",
+      title: "Corporate Brand Films",
+      description: "Vision, values, and impact stories that build trust and authority.",
+      benefit: "Brand authority"
     },
     {
       icon: "📱",
-      title: "Mobile-First Design",
-      description: "Every frame optimized for the scroll, swipe, and share generation.",
+      title: "Short-Form Social Ads",
+      description: "Vertical, fast, and native to feeds - designed for maximum engagement.",
       benefit: "Native social experience"
     }
   ];
@@ -92,24 +92,30 @@ export default function LandingPage() {
             </h1>
             
             <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Weekly drops, bold worlds, direct-to-fan. Human direction + generative tools—crafted for the scroll.
+              Commercials, animation explainers, brand films, and scroll-stopping social ads.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Link 
-                href="/catalog" 
+                href="mailto:info@framewave.studio?subject=Book a call - Framewave Studio"
                 className="group bg-gradient-to-r from-cyan-500 to-cyan-600 text-black font-bold px-8 py-4 rounded-xl text-lg hover:from-cyan-400 hover:to-cyan-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25 flex items-center"
               >
-                Watch the Catalog
+                Book a call
                 <ChevronRightIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
               
               <Link 
-                href="/press" 
+                href="mailto:info@framewave.studio?subject=Get a quote - Framewave Studio"
                 className="group border-2 border-white/20 text-white font-semibold px-8 py-4 rounded-xl text-lg hover:bg-white/10 transition-all duration-300 flex items-center"
               >
-                <PlayIcon className="w-5 h-5 mr-2" />
-                Press Kit
+                Get a quote
+              </Link>
+              
+              <Link 
+                href="/catalog" 
+                className="text-cyan-400 hover:text-cyan-300 font-semibold text-lg transition-colors"
+              >
+                Watch the catalog →
               </Link>
             </div>
             
@@ -175,6 +181,40 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Pricing Strip */}
+      <section className="py-16 bg-slate-800/50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
+              Investment levels
+            </h2>
+            <p className="text-slate-300 text-lg">
+              Transparent pricing for every business size
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="bg-slate-700/50 rounded-2xl p-8 text-center border border-slate-600/50">
+              <h3 className="text-xl font-bold text-white mb-2">SMB</h3>
+              <div className="text-3xl font-black text-cyan-400 mb-4">£5K–£8K</div>
+              <p className="text-slate-300">Perfect for startups and small businesses</p>
+            </div>
+            
+            <div className="bg-slate-700/50 rounded-2xl p-8 text-center border border-cyan-500/50 ring-2 ring-cyan-500/20">
+              <h3 className="text-xl font-bold text-white mb-2">Mid-market</h3>
+              <div className="text-3xl font-black text-cyan-400 mb-4">£12K–£30K</div>
+              <p className="text-slate-300">Ideal for growing companies</p>
+            </div>
+            
+            <div className="bg-slate-700/50 rounded-2xl p-8 text-center border border-slate-600/50">
+              <h3 className="text-xl font-bold text-white mb-2">Enterprise</h3>
+              <div className="text-3xl font-black text-cyan-400 mb-4">£40K–£75K</div>
+              <p className="text-slate-300">For large-scale brand campaigns</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -230,10 +270,10 @@ export default function LandingPage() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link 
-              href="/contact" 
+              href="mailto:info@framewave.studio?subject=Book a call - Framewave Studio"
               className="group bg-gradient-to-r from-cyan-500 to-cyan-600 text-black font-bold px-8 py-4 rounded-xl text-lg hover:from-cyan-400 hover:to-cyan-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25 flex items-center"
             >
-              Start Your Project
+              Book a call
               <ChevronRightIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
             
