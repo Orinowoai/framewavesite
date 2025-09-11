@@ -1,0 +1,60 @@
+<svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="20%" style="stop-color:#FFB347;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#FFD93D;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#6BCF7F;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#4ECDC4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A8E6CF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- F -->
+  <rect x="4" y="8" width="4" height="24" fill="url(#rainbow)" rx="2"/>
+  <rect x="4" y="8" width="16" height="4" fill="url(#rainbow)" rx="2"/>
+  <rect x="4" y="16" width="12" height="4" fill="url(#rainbow)" rx="2"/>
+  
+  <!-- r -->
+  <rect x="24" y="8" width="4" height="24" fill="url(#rainbow)" rx="2"/>
+  <rect x="24" y="8" width="12" height="4" fill="url(#rainbow)" rx="2"/>
+  <rect x="32" y="12" width="4" height="8" fill="url(#rainbow)" rx="2"/>
+  
+  <!-- a -->
+  <path d="M40 20 Q40 16 44 16 Q48 16 48 20 L48 32 Q48 36 44 36 Q40 36 40 32 L40 20 Z M44 20 L44 28 Q44 30 46 30 Q48 30 48 28 L48 20" fill="url(#rainbow)"/>
+  
+  <!-- m -->
+  <rect x="52" y="8" width="4" height="24" fill="url(#rainbow)" rx="2"/>
+  <rect x="60" y="8" width="4" height="24" fill="url(#rainbow)" rx="2"/>
+  <rect x="68" y="8" width="4" height="24" fill="url(#rainbow)" rx="2"/>
+  <rect x="52" y="8" width="20" height="4" fill="url(#rainbow)" rx="2"/>
+  
+  <!-- e -->
+  <rect x="76" y="8" width="4" height="24" fill="url(#rainbow)" rx="2"/>
+  <rect x="76" y="8" width="16" height="4" fill="url(#rainbow)" rx="2"/>
+  <rect x="76" y="16" width="12" height="4" fill="url(#rainbow)" rx="2"/>
+  <rect x="76" y="28" width="16" height="4" fill="url(#rainbow)" rx="2"/>
+  
+  <!-- w -->
+  <rect x="96" y="8" width="4" height="24" fill="url(#rainbow)" rx="2"/>
+  <rect x="108" y="8" width="4" height="24" fill="url(#rainbow)" rx="2"/>
+  <rect x="120" y="8" width="4" height="24" fill="url(#rainbow)" rx="2"/>
+  <rect x="96" y="28" width="28" height="4" fill="url(#rainbow)" rx="2"/>
+  
+  <!-- a -->
+  <path d="M128 20 Q128 16 132 16 Q136 16 136 20 L136 32 Q136 36 132 36 Q128 36 128 32 L128 20 Z M132 20 L132 28 Q132 30 134 30 Q136 30 136 28 L136 20" fill="url(#rainbow)"/>
+  
+  <!-- v -->
+  <rect x="140" y="8" width="4" height="20" fill="url(#rainbow)" rx="2"/>
+  <rect x="148" y="8" width="4" height="20" fill="url(#rainbow)" rx="2"/>
+  <rect x="140" y="24" width="12" height="4" fill="url(#rainbow)" rx="2"/>
+  
+  <!-- e -->
+  <rect x="156" y="8" width="4" height="24" fill="url(#rainbow)" rx="2"/>
+  <rect x="156" y="8" width="16" height="4" fill="url(#rainbow)" rx="2"/>
+  <rect x="156" y="16" width="12" height="4" fill="url(#rainbow)" rx="2"/>
+  <rect x="156" y="28" width="16" height="4" fill="url(#rainbow)" rx="2"/>
+  
+  <!-- Studio text -->
+  <text x="4" y="38" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#2C2C2C">STUDIO</text>
+</svg>
