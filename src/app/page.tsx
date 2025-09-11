@@ -8,42 +8,42 @@ export default function LandingPage() {
       title: "Brand Storytelling",
       description: "Compelling narratives that connect with your audience and build emotional connections.",
       benefit: "Higher brand affinity",
-      accentColor: "bg-red-500"
+      accentColor: "bg-gradient-to-r from-red-500 to-pink-500"
     },
     {
       icon: "📈",
       title: "Marketing Videos",
       description: "High-converting videos that drive sales, leads, and measurable business results.",
       benefit: "Increased conversions",
-      accentColor: "bg-orange-500"
+      accentColor: "bg-gradient-to-r from-orange-500 to-yellow-500"
     },
     {
       icon: "🏢",
       title: "Corporate Videos",
       description: "Professional documentation, training videos, and internal communications.",
       benefit: "Enhanced credibility",
-      accentColor: "bg-blue-500"
+      accentColor: "bg-gradient-to-r from-blue-500 to-cyan-500"
     },
     {
       icon: "🎨",
       title: "Animation & Motion Graphics",
       description: "Complex concepts made clear with professional animation and visual effects.",
       benefit: "Clear communication",
-      accentColor: "bg-green-500"
+      accentColor: "bg-gradient-to-r from-green-500 to-emerald-500"
     },
     {
       icon: "📱",
       title: "Social Media Content",
       description: "Platform-optimized content designed for maximum engagement and reach.",
       benefit: "Viral potential",
-      accentColor: "bg-purple-500"
+      accentColor: "bg-gradient-to-r from-purple-500 to-violet-500"
     },
     {
       icon: "🎯",
       title: "Event Coverage",
       description: "Professional documentation of conferences, product launches, and special events.",
       benefit: "Lasting memories",
-      accentColor: "bg-yellow-500"
+      accentColor: "bg-gradient-to-r from-yellow-500 to-amber-500"
     }
   ];
 
@@ -52,19 +52,22 @@ export default function LandingPage() {
       quote: "Framewave Studio increased our video engagement by 340% and generated $2.3M in additional revenue through their strategic video marketing approach.",
       author: "Sarah Chen",
       role: "VP Marketing, Nexus Digital Solutions",
-      rating: 5
+      rating: 5,
+      avatar: "SC"
     },
     {
       quote: "The quality of their work is exceptional. They transformed our brand story into something truly compelling that resonates with our customers.",
       author: "Marcus Rodriguez",
       role: "Creative Director, Summit Capital Advisors",
-      rating: 5
+      rating: 5,
+      avatar: "MR"
     },
     {
       quote: "Working with Framewave was seamless from start to finish. They delivered exactly what we needed, on time and within budget.",
       author: "Alex Kim",
       role: "Marketing Manager, Meridian Health Partners",
-      rating: 5
+      rating: 5,
+      avatar: "AK"
     }
   ];
 
@@ -119,34 +122,33 @@ export default function LandingPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-orange-50 to-red-50 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-red-100/20 via-orange-100/20 to-yellow-100/20"></div>
-        <div className="container mx-auto px-6 relative z-10">
+      <section className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50 py-20 lg:py-32">
+        <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-100 border border-orange-200 text-orange-600 text-sm font-semibold mb-8">
+            <div className="space-y-8">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-orange-100 border border-orange-200 text-orange-700 text-sm font-semibold">
                 <span className="w-2 h-2 bg-orange-500 rounded-full mr-2 animate-pulse"></span>
                 Award-Winning Video Production Studio
               </div>
               
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 We Turn Your{" "}
-                <span className="bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent">
                   Brand Story
                 </span>{" "}
                 Into Compelling Videos
               </h1>
               
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
+              <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
                 Award-winning video production that drives results. From concept to delivery, we create videos that captivate audiences and grow your business.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
                   href="mailto:hello@framewave.studio?subject=Free Strategy Call - Framewave Studio"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-full hover:from-orange-600 hover:to-red-600 transition-all duration-200 transform hover:scale-105 shadow-lg"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-full hover:from-orange-600 hover:to-red-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   Get Free Strategy Call
                   <ChevronRightIcon className="w-5 h-5 ml-2" />
@@ -178,9 +180,9 @@ export default function LandingPage() {
             
             <div className="relative">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-100 to-purple-100">
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-red-100 via-orange-100 to-yellow-100">
+                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-orange-100 via-red-100 to-pink-100">
                   <div className="text-center">
-                    <div className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <PlayIcon className="w-8 h-8 text-white ml-1" />
                     </div>
                     <p className="text-gray-900 font-semibold">Watch Our Work</p>
@@ -189,16 +191,16 @@ export default function LandingPage() {
               </div>
               
               {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-200 rounded-full blur-xl"></div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-200 rounded-full blur-xl"></div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-200 rounded-full blur-xl opacity-60"></div>
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-200 rounded-full blur-xl opacity-60"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Client Logos Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
+      <section className="py-16 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-6 max-w-6xl">
           <div className="text-center mb-12">
             <p className="text-gray-500 text-sm uppercase tracking-wider font-semibold mb-8">
               Trusted by Industry Leaders
@@ -216,7 +218,7 @@ export default function LandingPage() {
 
       {/* Services Section */}
       <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Full-Service Video Production
@@ -230,13 +232,13 @@ export default function LandingPage() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105"
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 border border-gray-100"
               >
                 <div className={`w-16 h-16 ${service.accentColor} rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-lg`}>
                   {service.icon}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
-                <p className="text-gray-600 mb-4">{service.description}</p>
+                <p className="text-gray-600 mb-4 leading-relaxed">{service.description}</p>
                 <div className="text-orange-500 text-sm font-semibold">{service.benefit}</div>
               </div>
             ))}
@@ -246,7 +248,7 @@ export default function LandingPage() {
 
       {/* Portfolio Section */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Work That Drives Results
@@ -257,10 +259,10 @@ export default function LandingPage() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {portfolioItems.map((item, index) => (
+            {portfolioItems.map((item) => (
               <div
                 key={item.id}
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer"
+                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 cursor-pointer border border-gray-100"
               >
                 <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl mb-6 flex items-center justify-center">
                   <div className="w-16 h-16 bg-white/80 rounded-full flex items-center justify-center shadow-lg">
@@ -284,8 +286,8 @@ export default function LandingPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gray-900 text-white">
-        <div className="container mx-auto px-6">
+      <section className="py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+        <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             {stats.map((stat, index) => (
               <div key={index} className="space-y-2">
@@ -299,7 +301,7 @@ export default function LandingPage() {
 
       {/* Testimonials Section */}
       <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               What Our Clients Say
@@ -313,11 +315,11 @@ export default function LandingPage() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg"
+                className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100"
               >
                 <div className="flex items-center mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <StarIcon key={i} className="w-5 h-5 text-yellow-400" />
+                    <StarIcon key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
                 
@@ -327,7 +329,7 @@ export default function LandingPage() {
                 
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
-                    {testimonial.author.split(' ').map(n => n[0]).join('')}
+                    {testimonial.avatar}
                   </div>
                   <div>
                     <div className="text-gray-900 font-semibold">{testimonial.author}</div>
@@ -342,8 +344,8 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-100 to-red-100">
-        <div className="container mx-auto px-6 text-center">
+      <section className="py-20 bg-gradient-to-r from-orange-50 to-red-50">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Ready to Create Compelling Video Content?
           </h2>
@@ -354,7 +356,7 @@ export default function LandingPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link 
               href="mailto:hello@framewave.studio?subject=Free Strategy Call - Framewave Studio"
-              className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-full hover:from-orange-600 hover:to-red-600 transition-all duration-200 transform hover:scale-105 shadow-lg"
+              className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-full hover:from-orange-600 hover:to-red-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Get Free Strategy Call
               <ChevronRightIcon className="w-5 h-5 ml-2" />
@@ -372,7 +374,7 @@ export default function LandingPage() {
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Frequently Asked Questions
@@ -382,11 +384,11 @@ export default function LandingPage() {
             </p>
           </div>
           
-          <div className="max-w-3xl mx-auto space-y-6">
+          <div className="space-y-6">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg"
+                className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100"
               >
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{faq.question}</h3>
                 <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
@@ -398,8 +400,8 @@ export default function LandingPage() {
 
       {/* Legal Disclaimer */}
       <section className="py-8 bg-gray-100">
-        <div className="container mx-auto px-6">
-          <p className="text-sm text-gray-600 text-center max-w-4xl mx-auto">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <p className="text-sm text-gray-600 text-center">
             This portfolio contains both real client work (used with permission) and fictional concept projects. All fictional companies and testimonials are created solely for demonstration purposes and do not represent actual clients or endorsements. Any resemblance to actual companies is purely coincidental.
           </p>
         </div>
