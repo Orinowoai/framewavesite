@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-6">
               <Image 
-                src="/logo.svg" 
+                src="/logo.png" 
                 alt="Framewave Studio" 
                 width={200} 
                 height={50} 

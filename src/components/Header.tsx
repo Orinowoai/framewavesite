@@ -24,7 +24,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image 
-              src="/logo.svg" 
+              src="/logo.png" 
               alt="Framewave Studio" 
               width={200} 
               height={50} 
