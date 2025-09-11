@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ChevronRightIcon, CheckIcon, StarIcon, PlayIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
+import { CheckIcon, StarIcon, PlayIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
+import StripeCheckout from "@/components/StripeCheckout";
 
 export default function LandingPage() {
   const services = [
@@ -146,13 +147,11 @@ export default function LandingPage() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link 
-                  href="mailto:hello@framewave.studio?subject=Free Strategy Call - Framewave Studio"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-full hover:from-orange-600 hover:to-red-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                >
-                  Get Free Strategy Call
-                  <ChevronRightIcon className="w-5 h-5 ml-2" />
-                </Link>
+                <StripeCheckout 
+                  priceId="price_strategy_call"
+                  buttonText="Book Strategy Call - $500"
+                  className="transform hover:scale-105"
+                />
                 
                 <Link 
                   href="/work" 
@@ -354,13 +353,11 @@ export default function LandingPage() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link 
-              href="mailto:hello@framewave.studio?subject=Free Strategy Call - Framewave Studio"
-              className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-full hover:from-orange-600 hover:to-red-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              Get Free Strategy Call
-              <ChevronRightIcon className="w-5 h-5 ml-2" />
-            </Link>
+            <StripeCheckout 
+              priceId="price_strategy_call"
+              buttonText="Book Strategy Call - $500"
+              className="transform hover:scale-105"
+            />
             
             <Link 
               href="/work" 

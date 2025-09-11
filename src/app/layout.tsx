@@ -31,7 +31,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://framewave.studio"),
   title: {
-    default: "Video Production Services | Framewave Studio | Professional Video Marketing",
+    default: "Framewave Studio | Award-Winning Video Production",
     template: "%s | Framewave Studio",
   },
   description: "Award-winning video production company creating compelling brand stories and marketing videos for enterprise clients. Full-service video marketing solutions that drive results.",
@@ -107,7 +107,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preload" href="/fonts/open-sans.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#FFB347" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/logo.png" type="image/png" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
@@ -123,7 +123,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "Organization",
               name: "Framewave Studio",
               url: "https://framewave.studio",
-              logo: "https://framewave.studio/logo.svg",
+              logo: "https://framewave.studio/logo.png",
               description: "Professional video production company specializing in brand storytelling and marketing videos",
               address: {
                 "@type": "PostalAddress",
@@ -170,7 +170,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "LocalBusiness",
               "@id": "https://framewave.studio/#organization",
               name: "Framewave Studio",
-              image: "https://framewave.studio/logo.svg",
+              image: "https://framewave.studio/logo.png",
               telephone: "+1-555-VIDEO-PRO",
               email: "hello@framewave.studio",
               address: {
